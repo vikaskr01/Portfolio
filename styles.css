@@ -1,0 +1,379 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #000000;
+    --background-color: #eeeff1;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  
+  /* NAVBAR */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 0 50px;
+    height: 80px;
+  }
+  
+  nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+  }
+  
+  nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  nav .right a span {
+    margin-left: 5px;
+  }
+  
+  /* SECTION 1: Hero */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+  }
+  
+  .hero-section .text {
+    flex: 5;
+  }
+  
+  .hero-section .text h2 {
+    font-size: 45px;
+  }
+  
+  .hero-section .text .links {
+    margin-top: 25px;
+  }
+  
+  .hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+  }
+  
+  .hero-section .text .links a:hover {
+   /* color: var(--text-color);*/
+    color:#2282ef;
+    border: 2px solid var(--text-color);
+  }
+  
+  .hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+  }
+  
+  .hero-section .headshot img {
+    width: 350px;
+    border-radius: 50%;
+  }
+
+
+    /* SECTION 2: Educaton */
+
+    /* Education Section */
+.education-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.education-card {
+  flex: 1 1 400px;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 29px;
+
+  
+}
+
+.education-card h3 {
+  font-size: 18px;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.education-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-card {
+  flex: 1 1 300px;
+  max-width: 200px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #eef5ff; /* Soft pastel blue */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 29px;
+
+}
+
+.skill-card h3 {
+  font-size: 16px;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-card li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+
+
+  /* all bg color */
+.resume-section {
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  color: #fff; /* White text for readability */
+  background-color: #5b9fbe; /* Light Blue */
+  border-radius: 29px;
+  
+
+
+}
+
+
+
+/* Horizontal Grid Layout */
+.projects-grid,
+.experience-grid,
+.certificates-grid {
+  display: flex;
+  flex-wrap: wrap; /* Ensures cards wrap if space is insufficient */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Centers the cards in the container */
+  margin-top: 20px;
+}
+
+/* Individual Cards Styling */
+.project-card,
+.experience-card,
+.certificate-card {
+  flex: 1 1 300px; /* Equal space and width for cards */
+  max-width: 300px;
+  background-color: #fff; /* White background for cards */
+  color: #333; /* Text color */
+  border-radius: 10px; /* Rounds card corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 15px;
+  text-align: center;
+  border-radius: 29px;
+
+}
+
+/* Headings inside Cards */
+.project-card h3,
+.experience-card h3,
+.certificate-card h3 {
+  font-size: 18px;
+  color: #4a90e2; /* Blue for project headings */
+  margin-bottom: 10px;
+}
+
+/* Paragraph and Span Styles */
+.project-card p,
+.experience-card p,
+.certificate-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.project-card span,
+.experience-card span,
+.certificate-card span {
+  font-size: 13px;
+  color: #555;
+}
+
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+}
+
+.contact-section .group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.contact-section .text,
+.contact-section form {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section input,
+.contact-section textarea {
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--link-color);
+  background: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: vertical;
+}
+
+.contact-section button {
+  font: 16px 'Poppins', sans-serif;
+  color: #fff;
+  background: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.contact-section button:hover {
+  filter: brightness(0.9);
+}
+
+  
+  @media (max-width: 850px) {
+    /* SECTION 1: Hero */
+    .hero-section .text h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 740px) {
+    /* SECTION 1: Hero */
+    .hero-section {
+      flex-direction: column-reverse;
+    }
+  
+    .hero-section .headshot img {
+      width: 300px;
+    }
+  
+    
+  
+    /* SECTION 4: Contact */
+    .contact-section .group {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* NAVBAR */
+    nav {
+      padding: 0 20px;
+    }
+  
+    nav .right a {
+      font-size: 22px;
+    }
+  
+    nav .right a:last-child {
+      color: var(--text-color);
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    nav .right a span {
+      display: none;
+    }
+  
+    /* SECTION 1: Hero */
+    .hero-section {
+      padding: 0 20px;
+    }
+  
+    .hero-section .text h2 {
+      font-size: 30px;
+    }
+  
+    /* SECTION 2: Skills */
+    .skills-section {
+      padding: 0 20px;
+    }
+  
+    .skills-section .cells .cell span {
+      font-size: 16px;
+    }
+  
+    
+  
+    /* SECTION 4: Contact */
+    .contact-section {
+      padding: 0 20px;
+    }
+  }
+
+
+  
